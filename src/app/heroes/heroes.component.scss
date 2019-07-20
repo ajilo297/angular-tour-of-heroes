@@ -1,0 +1,45 @@
+.heroes {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    display: flex;
+    margin: 0.5em;
+    background-color: wheat;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(194, 188, 233);
+      .badge {
+        background-color: slateblue;
+        border-radius: 6px 0px 0px 6px;
+        font-weight: 800;
+        color: black;
+      }
+      .name {
+        font-weight: 900;
+      }
+    }
+    &.selected {
+      background-color: slateblue;
+      color: white;
+      font-weight: 900;
+    }
+  }
+
+  .badge {
+    padding: 1em;
+    background-color: darkslateblue;
+    font-family: monospace;
+    border-radius: 10px 0px 0px 10px;
+    margin: 0 1em 0 0;
+    color: white;
+    display: flex;
+  }
+
+  .name {
+    font-family: monospace;
+    padding: 1em;
+    display: flex;
+  }
+}
